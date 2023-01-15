@@ -1,0 +1,449 @@
+        /* google fonts */
+        
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rampart+One&display=swap");
+         :root {
+            --main-color: rgb(223, 223, 223);
+            --main-color-hover: #ecaf2c;
+            --bg-color: #311e70;
+            --nav-text: rgb(211, 211, 211);
+            --section1: #0a0127;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            color: var(--nav-text);
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            line-height: 2;
+            text-align: justify;
+        }
+        
+        .flex_row {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        
+        .flex_col {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            /* border-radius: 15px; */
+            /* border: 1px solid #fff; */
+        }
+        
+        .flex_column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .flex_rows {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        /*---------------------- navbar----------------------------- */
+        
+        nav {
+            background-color: var(--bg-color);
+            /* padding: 0 15px; */
+            align-items: center;
+        }
+        
+        a {
+            color: var(--nav-text);
+            text-decoration: none;
+        }
+        
+        .menu {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 20px;
+        }
+        
+        .logo {
+            padding: 10px;
+        }
+        
+        .logo a {
+            color: var(--main-color);
+            font-weight: bold;
+        }
+        
+        .logo {
+            font-size: 20px;
+            padding: 10px 0px;
+        }
+        
+        .logo:hover,
+        a:hover {
+            color: var(--main-color-hover);
+        }
+        
+        .item {
+            padding: 10px;
+        }
+        
+        .item.button {
+            padding: 9px 5px;
+        }
+        
+        .item:not(.button) a:hover,
+        .item a:hover::after {
+            color: var(--main-color-hover);
+        }
+        /* Mobile menu */
+        
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 15px 5px;
+        }
+        
+        .menu li.subitem a {
+            padding: 15px;
+        }
+        
+        .toggle {
+            order: 1;
+            font-size: 20px;
+        }
+        
+        .item.button {
+            order: 2;
+        }
+        
+        .item {
+            order: 3;
+            width: 100%;
+            text-align: center;
+            display: none;
+            cursor: pointer;
+        }
+        
+        .active .item {
+            display: block;
+        }
+        /* Tablet menu */
+        
+        @media all and (min-width: 700px) {
+            .menu {
+                justify-content: center;
+            }
+            .logo {
+                flex: 1;
+            }
+            .toggle {
+                flex: 1;
+                text-align: right;
+                order: 2;
+            }
+        }
+        /* Desktop menu */
+        
+        @media all and (min-width: 960px) {
+            .menu {
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                background: none;
+            }
+            .logo {
+                order: 0;
+            }
+            .item {
+                order: 1;
+                position: relative;
+                display: block;
+                width: auto;
+            }
+            .toggle {
+                display: none;
+            }
+        }
+        /*----------------------// navbarend----------------------------- */
+        
+        .trainer_banner {
+            width: 100%;
+            height: 70vh;
+        }
+        
+        .section_end {
+            margin-bottom: 150px;
+            /* border: 1px solid #fff */
+        }
+        
+        .result1 {
+            text-align: center;
+            font-size: 80px;
+            color: var(--main-color-hover);
+        }
+        
+        .section_top_bottom {
+            padding: 100px;
+        }
+        
+        .section_color1 {
+            background-color: var(--section1);
+        }
+        
+        .driftnet_text {
+            font-family: "Rampart One", cursive;
+            font-size: 35px;
+            text-align: center;
+            color: var(--nav-text);
+            /* border: 1px solid #fff */
+        }
+        
+        .text_big {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+            color: var(--main-color-hover);
+        }
+        
+        h1 {
+            margin-bottom: 50px;
+        }
+        
+        .life_will {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            font-weight: bold;
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        .headding_membership {
+            font-size: 80px;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        .memebership {
+            display: flex;
+            justify-content: center;
+            background-color: var(--section1);
+        }
+        /* about us */
+        
+        .aboutus {
+            font-size: 20px;
+        }
+        
+        .box_join {
+            width: 350px;
+            height: 400px;
+            color: var(--section1);
+            border-radius: 10px;
+        }
+        
+        .margin_top1 {
+            margin-top: 80px;
+        }
+        
+        .join_button {
+            padding: 30px 90px;
+            ;
+            background-color: var(--section1);
+            border: 1px solid var(--nav-text);
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        
+        .join_button:hover,
+        .submit_button:hover {
+            background-color: var(--main-color-hover);
+            color: var(--section1);
+        }
+        
+        .margin_button {
+            /* margin-top: 120px; */
+            margin: 90px auto;
+        }
+        /* contact us */
+        
+        .flex_row1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .submit_button {
+            padding: 10px 40px;
+            border-radius: 10px;
+            background-color: var(--section1);
+            margin-top: 30px;
+        }
+        
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .map {
+            padding: 10px;
+        }
+        /* ----------------membership -------------------------*/
+        
+        .card {
+            border: 1px solid #ffffff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 370px;
+            background-color: var(--section1);
+        }
+        
+        .card:hover {
+            border: 1px solid var(--main-color-hover)
+        }
+        
+        .openning_heading {
+            font-size: 60px;
+        }
+        
+        .greentext {
+            color: #229b17;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .tick::before {
+            content: "\1F5F8";
+            margin-right: 10px;
+            color: #f3a2a2;
+            margin-left: 10px;
+        }
+        
+        .tick {
+            text-align: left;
+        }
+        
+        .img-about {
+            border-radius: 10px;
+        }
+        
+        .border {
+            border: 1px solid #ffffff;
+        }
+        
+        .table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            /* border: 1px solid #dddddd; */
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #2a0f55;
+        }
+        /* ----------------footer -------------------------*/
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* Tablets: 768px • Smaller tablets: 600px • Smartphones: 480px • Desktops: Max 1200px */
+        /* Small devices (landscape phones, 768px and up) */
+        
+        @media screen and (max-width: 769px) {
+            .life_will {
+                width: 100%;
+                font-size: 20px;
+            }
+            .margin_both {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .trainer_banner {
+                width: 100%;
+                height: 30vh;
+            }
+            .section_end {
+                margin-bottom: 80px;
+            }
+            .flex_row {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .flex_col {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .section_top_bottom {
+                padding: 40px 10px;
+            }
+            .result1 {
+                font-size: 35px;
+                color: var(--main-color-hover);
+            }
+            .flex_row1 {
+                flex-direction: column;
+                width: 100%;
+            }
+            .flex_rows {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .flex_row {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .flex_col {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
